@@ -1,10 +1,13 @@
-countTheLetter = (str, b) => {
+countLetter = (str, letter) => {
 	let counter = 0
-	for (let char of str) {
-		if (str.includes(b)) {
-			counter ++
+	let array = str.split("")
+	
+	for(let i = 0; i < array.length; i++) {
+		if (array[i] == letter) {
+			counter++;
 		}
-	} 
-	return counter
+	} return counter
+
 }
-console.log(countTheLetter('Check this', 'c'));
+console.log(countLetter('Very cold outside', 'O'));
+
